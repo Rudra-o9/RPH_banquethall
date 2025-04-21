@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Halls - Hall Management System</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        /* Hall Grid Styles */
+        .halls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .hall-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hall-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .hall-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .hall-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .hall-info {
+            padding: 20px;
+        }
+        
+        .hall-info h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .hall-info p {
+            color: #7f8c8d;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .capacity {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .halls-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Our Event Halls</h1>
+            <p>Select a hall to view details and availability</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="halls-grid">
+            <!-- Hall 1 -->
+            <div class="hall-card">
+                <a href="hall1.html">
+                    <img src="hall1.png" alt="Grand Ballroom" class="hall-image">
+                    <div class="hall-info">
+                        <h3>Grand Ballroom</h3>
+                        <p>Our most luxurious space with crystal chandeliers and a marble dance floor.</p>
+                        <span class="capacity">Capacity: 500 guests</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Hall 2 -->
+            <div class="hall-card">
+                <a href="hall2.html">
+                    <img src="hall2.png" alt="Oakwood Hall" class="hall-image">
+                    <div class="hall-info">
+                        <h3>Oakwood Hall</h3>
+                        <p>Elegant wooden paneling with modern amenities and natural lighting.</p>
+                        <span class="capacity">Capacity: 250 guests</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Hall 3 -->
+            <div class="hall-card">
+                <a href="hall3.html">
+                    <img src="hall3.png" alt="Garden Pavilion" class="hall-image">
+                    <div class="hall-info">
+                        <h3>Garden Pavilion</h3>
+                        <p>Outdoor venue surrounded by lush gardens, perfect for summer events.</p>
+                        <span class="capacity">Capacity: 300 guests</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Hall 4 -->
+            <div class="hall-card">
+                <a href="hall4.html">
+                    <img src="hall4.png" alt="Executive Boardroom" class="hall-image">
+                    <div class="hall-info">
+                        <h3>Executive Boardroom</h3>
+                        <p>Professional meeting space with state-of-the-art presentation technology.</p>
+                        <span class="capacity">Capacity: 30 guests</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Hall 5 -->
+            <div class="hall-card">
+                <a href="hall5.html">
+                    <img src="hall5.png" alt="Riverside Hall" class="hall-image">
+                    <div class="hall-info">
+                        <h3>Riverside Hall</h3>
+                        <p>Scenic views of the river with floor-to-ceiling windows and terrace access.</p>
+                        <span class="capacity">Capacity: 150 guests</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Hall 6 -->
+            <div class="hall-card">
+                <a href="hall6.html">
+                    <img src="hall6.png" alt="Sunset Terrace" class="hall-image">
+                    <div class="hall-info">
+                        <h3>Sunset Terrace</h3>
+                        <p>Rooftop venue offering panoramic city views, ideal for cocktail receptions.</p>
+                        <span class="capacity">Capacity: 100 guests</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Hall Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
